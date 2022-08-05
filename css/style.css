@@ -1,0 +1,186 @@
+body{
+    margin: 0;
+    background-image: url("../img/flag_ukrainy.jpg");
+    background-attachment: fixed;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,p{
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    max-width: 1360px;
+    padding: 30px;
+    margin: 0 auto;
+}
+.my_block{
+    width: 100%;
+}
+.me_person,
+.projects,
+.contacts{
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.5);
+    background-color: #fff;
+}
+
+.projects,
+.contacts{
+    margin-top: 50px;
+}
+.me_person{
+    
+    width: 100%;
+    display: flex;
+}
+.me_person .photo{
+    flex: 0 0 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.me_person .photo img{
+    width: 100%;
+}
+.me_person .txt{
+    margin-left: 100px;
+    color: #000;
+}
+.me_person .txt span{
+    font-size: 18px;
+    font-weight: 400;
+}
+.me_person .txt h1{
+    font-size: 40px;
+    margin: 30px 0;
+}
+.me_person .txt p{
+    margin: 0;
+    line-height: 25px;
+    width: 75%;
+}
+.tech_skills ul{
+    display: flex;
+    
+}
+.tech_skills ul>li+li{
+    margin-left: 20px;
+}
+.tech_skills h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.tech_skills ul li{
+    font-size: 18px;
+}
+
+.projects h2{
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.projects ul{
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.projects ul li{
+    margin-top: 20px;
+    flex-basis: 26%;
+    margin-bottom: 20px;
+}
+.projects ul li a{
+    text-decoration: none;
+    width: 100%;
+    display: block;
+}
+.projects ul li a img{
+    width: 100%;
+    transform: scale(1);
+    transition: .3s;
+}
+.projects ul li a:hover img{
+    transform: scale(1.06);
+    transition: .3s;
+}
+
+.projects ul li a p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.contacts ul{
+    position: relative;
+}
+.contacts ul li{
+    position: relative;
+    margin: 0 20px;
+    cursor: pointer;
+    width: 50px;
+}
+.contacts ul li a{
+    text-decoration: none;
+    display: block;
+    z-index: 100;
+}
+.contacts ul li a .fa-brands{
+    font-size: 50px;
+    color: #222;
+
+}
+.contacts ul li::before{
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 50px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.contacts ul li:nth-child(1)::before{
+    content: "\f2c6";
+    /* background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%,
+    #dc2743 50%, #cc2366 73%, #bc1888 100%
+    ); */
+    background-image: radial-gradient(circle at 50% -20.71%, #ff57d2 0, #ff4edb 12.5%, #f046e3 25%, #d63feb 37.5%, #b53cf2 50%, #8c3df9 62.5%, #4f40ff 75%, #0046ff 87.5%, #004bff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 4px solid #004bff;
+}
+
+.contacts ul li:hover::before{
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
