@@ -56,12 +56,19 @@ ul{
     margin-left: 100px;
     color: #000;
 }
+
 .me_person .txt span{
     font-size: 18px;
     font-weight: 400;
 }
 .me_person .txt p{
     font-size: 18px;
+}
+.me_person .txt p span{
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 15px;
 }
 .me_person .txt h1{
     font-size: 40px;
@@ -192,7 +199,29 @@ ul{
 
 
 
-
+@media screen and (max-width: 900px) {
+    .me_person{
+        flex-direction: column;
+        align-items: center;
+    }
+    .me_person .photo{
+        width: 250px;
+    }
+    .me_person .txt{
+        margin-left: 0;
+    }
+    .me_person .txt > span{
+        margin-top: 20px;
+    }
+    .me_person .txt h1{
+        margin-top: 20px;
+    }
+    .me_person .txt > span, .me_person .txt h1{
+        text-align: center;
+        display: block;
+    }
+    
+}
 
 
 
