@@ -81,10 +81,11 @@ ul{
 }
 .tech_skills ul{
     display: flex;
-    
+    flex-wrap: wrap;
 }
-.tech_skills ul>li+li{
-    margin-left: 20px;
+.tech_skills ul li{
+    margin-right: 20px;
+    margin-bottom: 15px;
 }
 .tech_skills h2{
     font-size: 20px;
@@ -259,7 +260,7 @@ ul{
         font-size: 14px;
     }
     .tech_skills ul{
-        justify-content: space-between;
+        flex-basis: 14%;
         flex-wrap: wrap;
     }
     .tech_skills ul>li+li {
@@ -268,9 +269,7 @@ ul{
     .projects ul li {
         flex-basis: 47%;
     }
-    .projects ul li a p {
-        font-size: 15px;
-    }
+    
 
 
 }
