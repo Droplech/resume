@@ -176,14 +176,14 @@ ul{
     background-image: radial-gradient(circle at 50% -20.71%, #ff57d2 0, #ff4edb 12.5%, #f046e3 25%, #d63feb 37.5%, #b53cf2 50%, #8c3df9 62.5%, #4f40ff 75%, #0046ff 87.5%, #004bff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    border-bottom: 4px solid #004bff;
+    /* border-bottom: 4px solid #004bff; */
 }
 .contacts ul li:nth-child(2) a::before{
     content: "\f87b";
     background: linear-gradient(20deg, rgba(0,255,59,1) 0%, rgba(9,121,33,1) 42%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    border-bottom: 4px solid rgba(9,121,33,1);
+    /* border-bottom: 4px solid rgba(9,121,33,1); */
 }
 
 .contacts ul li a:hover::before{
@@ -221,10 +221,68 @@ ul{
         display: block;
     }
     
+    .projects ul li{
+        flex-basis: 40%;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    .me_person .photo{
+        width: 150px;
+        flex: 0 0 150px;
+    }
+    .me_person .txt span {
+        font-size: 16px;
+    }
+    .me_person .txt h1 {
+        margin: 15px 0;
+        font-size: 25px;
+    }
+    .me_person .txt p span {
+        font-size: 16px;
+    }
+    .me_person .txt p{
+        width: 100%;
+        line-height: 23px;
+        font-size: 15px;
+    }
+    .me_person .txt{
+        width: 100%;
+    }
+    .container{
+        padding: 20px;
+    }
+    .tech_skills h2{
+        font-size: 16px;
+    }
+    .tech_skills ul li{
+        font-size: 14px;
+    }
+    .tech_skills ul{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .tech_skills ul>li+li {
+        margin-left: 0px;
+    }
+    .projects ul li {
+        flex-basis: 47%;
+    }
+    .projects ul li a p {
+        font-size: 15px;
+    }
+
+
 }
 
-
-
+@media screen and (max-width: 450px){
+    .projects ul li {
+        flex-basis: 100%;
+    }
+    .projects ul li a p {
+        font-size: 18px;
+    }
+}
 
 
 
